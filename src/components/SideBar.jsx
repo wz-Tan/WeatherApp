@@ -8,7 +8,6 @@ import { FaCloudSunRain } from "react-icons/fa6"
 import { TbBeach } from "react-icons/tb"
 
 const SideBar = ({fetchData, locationData}) => {
-  // Make an env file for the api key, and a proxy
   const searchLocation = async () =>{
     const searchTextValue=document.getElementById("searchTextArea").value
     await fetchData(searchTextValue)
